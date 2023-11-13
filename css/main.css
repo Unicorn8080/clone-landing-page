@@ -230,6 +230,7 @@ section header { margin-bottom: 3em; }
 
 .features {
   background-color: #eee;
+  padding: 50px;
 }
 
 .features h4 {
@@ -256,16 +257,25 @@ section header { margin-bottom: 3em; }
   bottom: 0;
 } */
 
-.features .left-image {
+.features .overview-image {
   padding: 0px !important;
-  background-image: url("../img/overview.jpg");
+  /* background-image: url("../img/overview.jpg"); */
   height: 100% ;
   background-size: cover;
 }
 
 .overview {  
-  margin-top: 50px;
   text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.overview .overview-container {
+  flex: 3;
+}
+
+.overview .overview-image {
+  flex: 2;
 }
 
 .overview h2 {
@@ -668,6 +678,7 @@ img.author-img {
   background: #2980b9;
 }
 
+
 /* ==========================================================================
    Buy Now
    ========================================================================== */
@@ -810,6 +821,15 @@ img.author-img {
   color: #fff;
   background: #2980b9;
   border: 1px solid #2980b9;
+}
+
+.site-footer .social li a svg {
+  fill: #3d79fb;
+  transition: ease .5s;
+}
+
+.site-footer .social li a:hover svg {
+  fill: #ffffff;
 }
 
 .modal-header {

@@ -3268,6 +3268,7 @@ button.close {
 .fa-linkedin-square:before {
   content: "\f08c";
 }
+
 .fa-thumb-tack:before {
   content: "\f08d";
 }
@@ -3478,6 +3479,12 @@ button.close {
 }
 .fa-linkedin:before {
   content: "\f0e1";
+}
+.fa-discord:before {
+  content: "\f392";
+}
+.fa-globe-pointer:before {
+  content: "\e60e";
 }
 .fa-rotate-left:before,
 .fa-undo:before {
