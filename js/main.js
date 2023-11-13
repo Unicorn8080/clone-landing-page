@@ -8,21 +8,56 @@ $(function() {
        CTA Form   
        ========================================================================== */	
 	
-	    $('#mc-form').ajaxChimp({
-        callback: callbackFunctionCta,
-        url: 'https://csmthemes.us3.list-manage.com/subscribe/post?u=9666c25a337f497687875a388&id=5b881a50fb'
-            // http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
-    });
+	//     $('#mc-form').ajaxChimp({
+    //     callback: callbackFunctionCta,
+    //     url: 'https://csmthemes.us3.list-manage.com/subscribe/post?u=9666c25a337f497687875a388&id=5b881a50fb'
+    //         // http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
+    // });
 
-    function callbackFunctionCta(resp) {
-        if (resp.result === 'success') {
-            $('.sub-form-error').slideUp();
-            $('.sub-form-success').slideDown();
-        } else if (resp.result === 'error') {
-            $('.sub-form-success').slideUp();
-            $('.sub-form-error').slideDown();
-        }
-    }
+    // function callbackFunctionCta(resp) {
+    //     if (resp.result === 'success') {
+    //         $('.sub-form-error').slideUp();
+    //         $('.sub-form-success').slideDown();
+    //     } else if (resp.result === 'error') {
+    //         $('.sub-form-success').slideUp();
+    //         $('.sub-form-error').slideDown();
+    //     }
+    // }
+
+    // $('$mc-form').submit(function(event) {
+    //     event.preventDefault(); // Prevents the default form submission
+
+    //     const apiKey = "21a43f896f076cc6ff4405174bbdbbff-us2";
+    //     const dc = "da5efafe44";
+
+    //     const url = `https://${dc}.api.mailchimp.com/3.0/lists`;
+
+    //     const requestOptions = {
+    //       method: "POST",
+    //       headers: {
+    //         Authorization: `Basic ${btoa(`anystring:${apiKey}`)}`,
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({
+    //         campaign_defaults: {
+    //             from_name: $("#mailchimp-fname").val(),
+    //             from_email: $("#mailchimp-email").val(),
+    //             subject: $("#subject").val(),
+    //             language: $("#language").val(),
+    //           },
+    //       }),
+    //     };
+
+    //     $.ajax(url, requestOptions)
+    //       .done(function(data) {
+    //         console.log(data);
+    //       })
+    //       .fail(function(error) {
+    //         console.error(error);
+    //       });
+
+    //     // You can perform any other actions after the request is sent
+    //   });
 	
 
 	
@@ -100,22 +135,22 @@ $(function() {
    ========================================================================== */
     
     
-    $('.tweet').twittie({
-        username: 'envatomarket', // change username here
-        dateFormat: '%b. %d, %Y',
-        template: '{{tweet}}',
-        count: 10
-    }, function() {
-        var item = $('.tweet ul');
+    // $('.tweet').twittie({
+    //     username: 'envatomarket', // change username here
+    //     dateFormat: '%b. %d, %Y',
+    //     template: '{{tweet}}',
+    //     count: 10
+    // }, function() {
+    //     var item = $('.tweet ul');
         
-        item.children('li').first().show().siblings().hide();
-        setInterval(function() {
-            item.find('li:visible').fadeOut(500, function() {
-                $(this).appendTo(item);
-                item.children('li').first().fadeIn(500);
-            });
-        }, 5000);
-    });
+    //     item.children('li').first().show().siblings().hide();
+    //     setInterval(function() {
+    //         item.find('li:visible').fadeOut(500, function() {
+    //             $(this).appendTo(item);
+    //             item.children('li').first().fadeIn(500);
+    //         });
+    //     }, 5000);
+    // });
 
 
     /* ==========================================================================
