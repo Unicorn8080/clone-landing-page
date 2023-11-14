@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("mc-form").addEventListener("submit", function(event) {
       event.preventDefault();
   
-      const apiKey = "21a43f896f076cc6ff4405174bbdbbff-us2";
+      const apiKey = "";
       const dc = "us2";
   
       const url = `https://us2.api.mailchimp.com/3.0/lists/da5efafe44/`;
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
       fetch(url, {
         method: "POST",
         headers: {
-          "Authorization": `Basic ${btoa(`anystring:${apiKey}`)}`,
+          "Authorization": `Basic ${window.btoa(`anystring:${apiKey}`)}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
